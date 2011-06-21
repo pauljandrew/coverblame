@@ -1,0 +1,17 @@
+Little script to take the output of nose's coverage tool and output a list of all authors with untested code
+
+Input:
+
+project.util.wha                                          74      0   100%   
+project.util.json                                         11      5    55%   19-25
+
+Output:
+
+Paul Andrew - 5
+--- project.util.json [19, 21, 22, 23, 24]
+John Doe - 16
+--- project.util.json [25]
+
+Usage: (grep the output yourself!) 
+
+python cover_blame.py FILENAME  
